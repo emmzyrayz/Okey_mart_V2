@@ -1,0 +1,102 @@
+.footer {
+    bottom: 0;
+    text-align: center;
+}
+
+.footer_section {
+    background: var(--black);
+    min-height: 440px;
+    padding: 0px 5%;
+}
+
+.footer_container .exclusive,
+.footer_container .support,
+.footer_container .account,
+.footer_container .quick-link,
+.footer_container .app {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 217px;
+    min-height: 188px;
+    color: var(--text);
+    justify-content: space-between;
+}
+
+.exclusive h2 {
+    font-size: var(--fs-24);
+    font-weight: 800;
+}
+
+.exclusive .text {
+    font-size: var(--fs-20);
+    font-weight: 500;
+}
+
+.exclusive span {
+    font-weight: 400;
+    font-size: var(--fs-16);
+}
+
+.exclusive .input {
+    min-height: 50px;
+    min-width: 217px;
+    border-radius: 5px;
+    border: 4px solid var(--text);
+    font-family: 'poppins', sans-serif;
+}
+
+.input input {
+    background: transparent;
+    padding: 5px 10px;
+}
+
+.input .fa {
+    position: absolute;
+    right: 15px;
+    transform: rotate(55deg);
+}
+
+.support h2,
+.account h2,
+.quick-link h2,
+.app h2 {
+    font-size: var(--fs-20);
+    font-weight: 600;
+}
+
+.support .text,
+.support span,
+.account span,
+.quick-link span {
+    font-size: var(--fs-16);
+    font-weight: 400;
+}
+
+.app span {
+    font-size: var(--fs-12);
+    font-weight: 500;
+}
+
+.app .app-con {
+    min-height: 84px;
+    min-width: 198px;
+}
+
+.app-con .qr {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.app-con .appst {
+    min-width: 110px;
+    min-height: 84px;
+    gap: 2px;
+}
+
+.appst .playstore,
+.appst .appstore {
+    width: 110px;
+    height: 40px;
+}

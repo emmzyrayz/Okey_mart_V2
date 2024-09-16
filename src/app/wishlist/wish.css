@@ -1,0 +1,88 @@
+.wishlist_section {
+    padding: 0px 5%;
+}
+
+.wish_head {
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.wish_head h2 {
+    font-size: var(--fs-20);
+    font-weight: 500;
+    color: var(--text2);
+}
+
+.wish_head .btn_w {
+    width: 223px;
+    height: 56px;
+    font-size: var(--fs-16);
+    font-weight: 600;
+    border: 1px dotted var(--text2);
+    border-radius: 10px;
+}
+
+.wish_item {
+    min-width: 270px;
+    min-height: 322px;
+    border-radius: 8px;
+}
+
+.wish_item .item_img {
+    width: 270px;
+    height: 250px;
+    padding: 20px;
+    background: var(--secondary);
+    border-radius: 10px;
+}
+
+.item_img .Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item_img .discount {
+    display: flex;
+    top: 10px;
+    left: 20px;
+    background: var(--secondary2);
+    border-radius: 6px;
+    width: 55px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    font-size: var(--fs-12);
+    font-weight: 500;
+}
+
+.item_img span.bbin {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 34px;
+    height: 34px;
+    background: var(--primary);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+span.bbin .bin {
+    width: 24px;
+    height: 24px;
+    color: var(--button);
+}
+
+.item_img span.ccart {
+    width: 270px;
+    height: 41px;
+    color: var(--primary);
+}
+
+.ccart .cart {
+    width: 24px;
+    height: 24px;
+}
