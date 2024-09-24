@@ -18,7 +18,7 @@ import {
 
 export default function Today() {
   // Set the end date here (e.g., Dec 31, 2024)
-  const endDate = new Date("2024-09-22T23:59:59").getTime();
+  const endDate = new Date("2024-12-22T23:59:59").getTime();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const [timeLeft, setTimeLeft] = useState({

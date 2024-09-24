@@ -9,6 +9,7 @@ import {FiShoppingBag, FiUser, FiBell} from "react-icons/fi";
 import {ImCancelCircle} from "react-icons/im";
 import {CiStar} from "react-icons/ci";
 import {TbLogout2} from "react-icons/tb";
+import { HamburgerMenu } from "../hamburger/page";
 
 export const HomeNav = () => {
   const pathname = usePathname();
@@ -26,20 +27,28 @@ export const HomeNav = () => {
   ];
 
   return (
-    <div className="homenav_section flex flex-row items-center justify-between">
+    <div className="homenav_section flex flex-row items-center justify-between relative">
       <div className="logo font-bold w-1/5">
         <Link href="/">
           <span>OKEY-MART</span>
         </Link>
       </div>
+      <div className="mobile_icon hidden  flex-row w-3/5  items-center justify-end gap-5">
+        <div className="search_icon flex">
+          <div className="search flex flex-row relative items-center justify-evenly">
+            <FaSearch className="nav-icon absolute right-1" />
+          </div>
+        </div>
+        <HamburgerMenu />
+      </div>
       <div className="nav_btn relative w-2/5">
         <ul className="flex flex-row w-full justify-evenly">
           {navItems.map((item, index) => (
             <li key={index} className={pathname === item.path ? "active" : ""}>
-              <a href={item.path}>
-                {item.label}
+              <Link href={item.path}>
+                <span>{item.label}</span>
                 <hr />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

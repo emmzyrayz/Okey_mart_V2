@@ -15,9 +15,7 @@
     align-items: center;
     white-space: nowrap;
     width: 90%;
-    /* Prevents text from wrapping to the next line */
     animation: scrollText 15s linear infinite;
-    /* Creates the continuous scrolling effect */
 }
 
 .offer-text {
@@ -25,18 +23,53 @@
     flex-direction: row;
     align-items: center;
     margin-right: 50px;
-    /* Adds space between each offer */
 }
 
 @keyframes scrollText {
     0% {
         transform: translateX(180%);
-        /* Start position: off the screen on the right */
     }
 
     100% {
         transform: translateX(-180%);
-        /* End position: fully off the screen on the left */
+    }
+}
+
+@media (max-width: 767px) {
+    .offer_section {
+        font-size: var(--fs-10);
+        height: 30px;
+    }
+
+    .offer_container {
+        animation: scrollText 18s linear infinite;
+    }
+
+    .offer-text {
+        margin-right: 20px;
+    }
+
+    .language-dropdown {
+        top: 5px;
+        right: 10px;
+    }
+
+    .language-menu {
+        top: 35px;
+        right: 10px;
+        min-width: 100px;
+        font-size: var(--fs-12);
+    }
+}
+
+/* For tablets, adjust layout accordingly */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .offer_section {
+        font-size: var(--fs-12);
+    }
+
+    .offer_container {
+        animation: scrollText 23s linear infinite;
     }
 }
 
@@ -59,19 +92,6 @@
     }
 }
 
-/* For tablets, keep the animation a bit faster */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .offer_container {
-        animation: scrollText 23s linear infinite;
-    }
-}
-
-/* For mobile devices, keep the original speed */
-@media (max-width: 767px) {
-    .offer_container {
-        animation: scrollText 18s linear infinite;
-    }
-}
 
 .language-dropdown {
     display: flex;
@@ -82,14 +102,9 @@
     font-weight: bold;
     right: 5%;
     background: var(--black) !important;
+    position: absolute;
 }
 
-@media (max-width: 758px) {
-    .offer_section {
-        font-size: var(--fs-10);
-        height: 30px;
-    }
-}
 
 .language-menu {
     background: rgba(102, 102, 102, 0.26);

@@ -1,0 +1,42 @@
+.faint {
+    opacity: .5;
+}
+
+.full {
+    opacity: 1;
+}
+
+.about_section {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about_container .about_text{
+
+
+    h1{
+        font-size: var(--fs-54);
+        font-weight: 600;
+        color: var(--black);
+    }
+
+    .story p{
+        font-size: var(--fs-16);
+        color: var(--text2);
+        font-family: 'poppins';
+        font-weight: 400;
+        /* width: ; */
+    }
+}
+
+.about_container .about_img{
+
+
+    img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+}

@@ -29,6 +29,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+      </head>
       <body>
         <div className="page-container">
           {/* Conditionally render TopBar */}

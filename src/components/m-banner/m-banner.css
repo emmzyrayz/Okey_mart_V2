@@ -34,3 +34,15 @@ span.line {
 .banner {
     width: 80%;
 }
+
+@media (max-width: 808px){
+    .sortcat,
+    .line{
+        display: none;
+    }
+
+    .banner{
+        min-width: 100%;
+        margin-right: 20px;
+    }
+}

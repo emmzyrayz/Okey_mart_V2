@@ -30,6 +30,7 @@ const cartItemsData = [
 
 export default function Checkout() {
   const [cartItems, setCartItems] = useState(cartItemsData);
+  const [selectedPayment, setSelectedPayment] = useState<string>("cash");
 
   // Function to handle quantity change
   const handleQuantityChange = (id: number, action: string) => {
@@ -54,7 +55,7 @@ export default function Checkout() {
 
   return (
     <div className="checkout_section">
-      <div className="checkout_nav flex flex-row gap-1">
+      <div className="checkout_nav flex flex-row gap-1 mb-10">
         <span className="faint">Account</span>
         <span className="faint">/</span>
         <span className="faint">My Account</span>
@@ -65,10 +66,10 @@ export default function Checkout() {
         <span className="faint">/</span>
         <span className="full">CheckOut</span>
       </div>
-      <div className="checkout_container">
-        <div className="checkout_head">Billing Details</div>
-        <div className="checkout_con">
-          <div className="checkout_inputs">
+      <div className="checkout_container flex flex-col gap-5">
+        <div className="checkout_head mb-10">Billing Details</div>
+        <div className="checkout_con flex flex-row items-center justify-between h-full gap-5">
+          <div className="checkout_inputs flex flex-col items-start justify-center gap-5 w-2/4">
             <div className="checkout_input">
               <span>First Name*</span>
               <input type="text" className="input" />
@@ -97,14 +98,19 @@ export default function Checkout() {
               <span>Email Address*</span>
               <input type="email" className="input" />
             </div>
-            <div className="checkout_input">
-              <input type="checkbox" name="tick" id="checkbox" />
+            <div className="checkout_inputt gap-3 flex flex-row">
+              <input
+                type="checkbox"
+                className="tick-checkbox"
+                name="tick"
+                id="checkbox"
+              />
               <span className="full">
                 Save this information for faster check-out next time
               </span>
             </div>
           </div>
-          <div className="checkout_c">
+          <div className="checkout_c flex flex-col gap-5 w-2/4">
             <div className="checkout_items">
               <div className="checkout_item">
                 {cartItems.map((item) => (
@@ -124,7 +130,9 @@ export default function Checkout() {
                     </div>
 
                     {/* Price */}
-                    <div className="cart-item price">${item.price}</div>
+                    <div className="cart-item price items-center justify-center flex">
+                      ${item.price}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -157,13 +165,20 @@ export default function Checkout() {
                 </span>
               </div>
             </div>
-            <div className="payment_opt">
-              <div className="bank_opt">
-                <div className="bank_input">
-                  <input type="checkbox" name="" id="" />
+            <div className="payment_opt flex flex-col gap-1">
+              <div className="bank_opt flex flex-row justify-between">
+                <div className="bank_input flex flex-row gap-1 items-center justify-center">
+                  <input
+                    type="radio"
+                    name="payment"
+                    id="dot"
+                    value="bank"
+                    checked={selectedPayment === "bank"}
+                    onChange={() => setSelectedPayment("bank")}
+                  />
                   <span>Bank</span>
                 </div>
-                <div className="bank_icons">
+                <div className="bank_icons flex flex-row items-center justify-end">
                   <Image src={Bkash} alt="Bkash" width={42} height={28} />
                   <Image src={Visa} alt="Visa" width={42} height={28} />
                   <Image
@@ -175,8 +190,15 @@ export default function Checkout() {
                   <Image src={Nagad} alt="Nagad" width={42} height={28} />
                 </div>
               </div>
-              <div className="cash_opt">
-                <input type="checkbox" name="" id="" />
+              <div className="cash_opt flex flex-row gap-1 items-center justify-start">
+                <input
+                  type="radio"
+                  name="payment"
+                  id="dot"
+                  value="cash"
+                  checked={selectedPayment === "cash"}
+                  onChange={() => setSelectedPayment("cash")}
+                />
                 <span>Cash on delivery</span>
               </div>
             </div>

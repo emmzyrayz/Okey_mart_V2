@@ -1,3 +1,7 @@
+* {
+    /* outline: 1px solid red; */
+}
+
 .faint {
     opacity: .5;
 }
@@ -73,4 +77,82 @@
 
 .coupon_btn:hover {
     background: var(--btn-hover);
+}
+
+.checkout_head {
+    font-size: var(--fs-36);
+    font-weight: 600;
+    color: var(--text2);
+}
+
+.checkout_con {
+    /* padding: 0px 0px; */
+}
+
+.checkout_con .checkout_inputs {
+    /* min-height: 814px; */
+    /* min-width: 470px; */
+}
+
+.checkout_inputs .checkout_input {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    color: var(--text2);
+    font-size: var(--fs-16);
+    font-weight: 400;
+}
+
+.checkout_input span {
+    opacity: .5;
+}
+
+.checkout_input input {
+    min-width: 470px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--secondary);
+    padding: 0px 10px;
+}
+
+input[type='checkbox'].tick-checkbox {
+    accent-color: var(--secondary2);
+}
+
+input[type='checkbox'].tick-checkbox:checked {
+    background-color: var(--secondary2);
+}
+
+input[type='radio']#dot {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    /* Set size */
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+input[type='radio']#dot:checked {
+    background-color: black;
+    border: 2px solid white;
+    outline: 1px solid black;
+}
+
+input[type='radio']#dot:checked::before {
+    content: "";
+    display: block;
+    width: 12px;
+    /* Inner black circle size */
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
 }
