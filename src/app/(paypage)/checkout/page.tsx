@@ -29,8 +29,9 @@ const cartItemsData = [
 ];
 
 export default function Checkout() {
-  const [cartItems, setCartItems] = useState(cartItemsData);
+  // const [cartItems, setCartItems] = useState(cartItemsData);
   const [selectedPayment, setSelectedPayment] = useState<string>("cash");
+  const cartItems = cartItemsData;
 
   // Function to handle quantity change
   // const handleQuantityChange = (id: number, action: string) => {
