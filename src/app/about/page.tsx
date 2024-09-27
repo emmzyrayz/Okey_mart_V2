@@ -29,7 +29,7 @@ export default function About() {
             <h1>Our Story</h1>
             <span className="story gap-2">
               <p>
-                Launced in 2015, Exclusive is South Asia's premier online
+                Launced in 2015, Exclusive is South Asia&apos;s premier online
                 shopping makterplace with an active presense in Bangladesh.
                 Supported by wide range of tailored marketing, data and service
                 solutions, Exclusive has 10,500 sallers and 300 brands and

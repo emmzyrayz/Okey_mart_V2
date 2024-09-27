@@ -1,6 +1,9 @@
 import "./wish.css";
 import Image from "next/image";
-import {FaStar, FaRegStar, FaStarHalf} from "react-icons/fa6";
+import {FaStar,
+  //  FaRegStar, 
+  //  FaStarHalf
+  } from "react-icons/fa6";
 import {RiDeleteBinLine} from "react-icons/ri";
 import {CiShoppingCart} from "react-icons/ci";
 import GucciBag from "../../../assets/img/products/gucci-bag.png";
@@ -132,7 +135,7 @@ export default function WishList() {
         <div className="wish_head flex flex-row w-full items-center justify-between">
           <div className="today_top flex flex-row items-center gap-3">
             <div className="today_red"></div>
-            <h2 className="h2">Today's</h2>
+            <h2 className="h2">Today&apos;s</h2>
           </div>
           <div className="btn_w flex items-center justify-center">See All</div>
         </div>

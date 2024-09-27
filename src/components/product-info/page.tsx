@@ -1,8 +1,10 @@
 
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import './product.css';
-import { FaPlus, FaMinus, FaRegHeart, FaHeart, FaStarHalf, FaRegStar, FaStar, FaRegEye } from 'react-icons/fa6';
+import { FaPlus, FaMinus, FaRegHeart,
+  //  FaHeart,
+    FaStarHalf, FaRegStar, FaStar, FaRegEye } from 'react-icons/fa6';
 import {TbTruckDelivery} from "react-icons/tb";
 import {PiArrowsCounterClockwise} from "react-icons/pi";
 import Havic1 from '../../assets/img/products/havic-gamepad/havic-1.png';

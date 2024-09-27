@@ -2,7 +2,6 @@ import './login.css'
 import Image from "next/image";
 import Link from "next/link";
 import SignImg from "../../../assets/img/products/signin-img.png";
-import Gicon from "../../../assets/img/products/Icon-Google.svg";
 export default function SignIn() {
   return (
     <div className="signup_section flex flex-row w-full h-full items-center justify-center">

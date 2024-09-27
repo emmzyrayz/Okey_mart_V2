@@ -38,7 +38,7 @@ export default function Featured() {
               <Image src={Woman} width={500} height={300} alt="product" />
             </div>
             <div className="grid_detail flex flex-col absolute">
-              <h3>Women's Collection</h3>
+              <h3>Women&apos;s Collection</h3>
               <span className="grid_det">
                 Featured woman collections that gives you another vibe.
               </span>
@@ -67,9 +67,7 @@ export default function Featured() {
             </div>
             <div className="grid_detail flex flex-col absolute">
               <h3>Perfume</h3>
-              <span className="grid_det">
-                GUCCI INTENSE OUD EDP.
-              </span>
+              <span className="grid_det">GUCCI INTENSE OUD EDP.</span>
 
               <div className="grid_btn">
                 <span className="underline">Shop Now</span>

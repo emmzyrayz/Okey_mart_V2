@@ -1,7 +1,7 @@
 "use client";
 import {usePathname} from "next/navigation";
 import Link from "next/link";
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import "./navbar.css";
 import {FaSearch, FaRegHeart} from "react-icons/fa";
 import {TiShoppingCart} from "react-icons/ti";

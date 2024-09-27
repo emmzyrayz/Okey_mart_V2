@@ -15,7 +15,7 @@ export const SortCat: React.FC<SortCatProps> = ({className}) => {
             href="/"
             className="sortcat_item flex flex-row items-center justify-between"
           >
-            <span>Woman's Fashion</span>
+            <span>Woman&apos;s Fashion</span>
             <FaAngleRight />
           </Link>
         </span>
@@ -24,7 +24,7 @@ export const SortCat: React.FC<SortCatProps> = ({className}) => {
             href="/"
             className="sortcat_item flex flex-row items-center justify-between"
           >
-            <span>Men's Fashion</span>
+            <span>Men&apos;s Fashion</span>
             <FaAngleRight />
           </Link>
         </span>
@@ -50,7 +50,7 @@ export const SortCat: React.FC<SortCatProps> = ({className}) => {
         </span>
         <span>
           <Link href="/" className="sortcat_item">
-            <span>Baby's & Toys</span>
+            <span>Baby&apos;s & Toys</span>
           </Link>
         </span>
         <span>

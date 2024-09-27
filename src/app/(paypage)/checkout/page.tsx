@@ -33,21 +33,21 @@ export default function Checkout() {
   const [selectedPayment, setSelectedPayment] = useState<string>("cash");
 
   // Function to handle quantity change
-  const handleQuantityChange = (id: number, action: string) => {
-    setCartItems((prevItems) =>
-      prevItems.map((item) =>
-        item.id === id
-          ? {
-              ...item,
-              quantity:
-                action === "increment"
-                  ? item.quantity + 1
-                  : Math.max(1, item.quantity - 1),
-            }
-          : item
-      )
-    );
-  };
+  // const handleQuantityChange = (id: number, action: string) => {
+  //   setCartItems((prevItems) =>
+  //     prevItems.map((item) =>
+  //       item.id === id
+  //         ? {
+  //             ...item,
+  //             quantity:
+  //               action === "increment"
+  //                 ? item.quantity + 1
+  //                 : Math.max(1, item.quantity - 1),
+  //           }
+  //         : item
+  //     )
+  //   );
+  // };
 
   const calculateSubtotal = (price: number, quantity: number) => {
     return price * quantity;

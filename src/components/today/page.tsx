@@ -81,7 +81,7 @@ export default function Today() {
     <div className="today_section w-full flex flex-col">
       <div className="today_top flex flex-row items-center gap-2">
         <div className="today_red"></div>
-        <h2>Today's</h2>
+        <h2>Today&apos;s</h2>
       </div>
       <div className="today_header flex flex-row w-full">
         <div className="left flex flex-row">
@@ -135,7 +135,10 @@ export default function Today() {
           </div>
         </div>
       </div>
-      <div className="today_product flex flex-row overflow-x-auto mb-8" ref={scrollContainerRef}>
+      <div
+        className="today_product flex flex-row overflow-x-auto mb-8"
+        ref={scrollContainerRef}
+      >
         <div className="product_item">
           <div className="product_image">
             <span className="discount">-40%</span>
