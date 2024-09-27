@@ -46,13 +46,14 @@ export default function SignUp() {
             />
             <input type="button" className="sign-btn" value="Create Account" />
             <div className="google flex flex-row gap-2 items-center justify-center">
-              <Image
+              {/* <Image
                 src={Gicon}
                 alt="google icon"
                 className="g-icon"
                 width={24}
                 height={24}
-              />
+              /> */}
+              <Gicon className="g-icon" />
               <input
                 type="button"
                 value="Sign Up with Google"
@@ -62,7 +63,10 @@ export default function SignUp() {
           </form>
           <div className="sign-re flex justify-center items-end">
             <span>
-              Already have an account? <Link href="/signin" className='link'>Log in</Link>
+              Already have an account?{" "}
+              <Link href="/signin" className="link">
+                Log in
+              </Link>
             </span>
           </div>
         </div>
