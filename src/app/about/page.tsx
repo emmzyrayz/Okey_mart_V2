@@ -1,12 +1,13 @@
+'use client'
 import './about.css';
 import Image from 'next/image';
 import AboutB from '../../assets/img/avatar/about_banner.png';
 import Action from '@/components/action/page';
+import {FiShoppingBag} from "react-icons/fi";
+import {TbCalendarDollar} from "react-icons/tb";
 import { BiStoreAlt } from 'react-icons/bi';
 import { CiDollar } from 'react-icons/ci';
 import { FaXTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
-import DollarBag from "../../assets/img/icons/moneybag.png";
-import ShoppingBag from "../../assets/img/icons/shopping.svg";
 import WillSmith from '../../assets/img/avatar/willsmith.png';
 import EmmaWatson from '../../assets/img/avatar/emmawatson.png';
 import TomCruise from '../../assets/img/avatar/tomcruise.png';
@@ -23,7 +24,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="about_container flex flex-row items-center w-full gap-4">
+        <div className="about_container flex flex-row items-center w-full h-full gap-4">
           <div className="about_text w-1/2 flex flex-col items-start gap-2">
             <h1>Our Story</h1>
             <span className="story gap-2">
@@ -46,7 +47,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="about_stats">
+        <div className="about_stats flex flex-row items-center justify-center gap-2 w-full">
           <div className="about_stat">
             <div className="stat_img">
               <BiStoreAlt className="stat_icon" />
@@ -63,42 +64,30 @@ export default function About() {
           </div>
           <div className="about_stat">
             <div className="stat_img">
-              <Image
-                src={ShoppingBag}
-                alt=""
-                width={60}
-                height={60}
-                className="stat_icon"
-              />
+              <FiShoppingBag className="stat_icon" />
             </div>
             <h1>45.5k</h1>
             <div className="stat_desc">Customers active on our site</div>
           </div>
           <div className="about_stat">
             <div className="stat_img">
-              <Image
-                src={DollarBag}
-                alt=""
-                width={60}
-                height={60}
-                className="stat_icon"
-              />
+              <TbCalendarDollar className="stat_icon" />
             </div>
             <h1>25k</h1>
             <div className="stat_desc">Annual Gross sales on our site</div>
           </div>
         </div>
 
-        <div className="about_devs_con">
-          <div className="about_devs flex flex-row flex-nowrap overflow-auto">
+        <div className="about_devs_con flex flex-col gap-3">
+          <div className="about_devs flex flex-row w-full overflow-auto gap-4">
             <div className="about_dev flex flex-col">
               <div className="dev_image">
                 <Image
                   src={TomCruise}
                   alt=""
-                  width={60}
-                  height={60}
-                  className="stat_icon"
+                  width={300}
+                  height={500}
+                  className="dev_img"
                 />
               </div>
               <div className="dev_desc">
@@ -125,9 +114,9 @@ export default function About() {
                 <Image
                   src={EmmaWatson}
                   alt=""
-                  width={60}
-                  height={60}
-                  className="stat_icon"
+                  width={300}
+                  height={500}
+                  className="dev_img"
                 />
               </div>
               <div className="dev_desc">
@@ -154,9 +143,9 @@ export default function About() {
                 <Image
                   src={WillSmith}
                   alt=""
-                  width={60}
-                  height={60}
-                  className="stat_icon"
+                  width={300}
+                  height={500}
+                  className="dev_img"
                 />
               </div>
               <div className="dev_desc">
@@ -177,6 +166,13 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="devs_slide flex flex-row items-center justify-center w-full gap-3">
+            <span className="slide_btn"></span>
+            <span className="slide_btn"></span>
+            <span className="slide_btn active"></span>
+            <span className="slide_btn"></span>
+            <span className="slide_btn"></span>
           </div>
         </div>
 

@@ -2,10 +2,10 @@
     bottom: 0;
     text-align: center;
     padding: 20px 0;
+    background: var(--black);
 }
 
 .footer_section {
-    background: var(--black);
     min-height: 440px;
     padding: 0px 5%;
 }
