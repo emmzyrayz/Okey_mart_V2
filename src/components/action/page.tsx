@@ -6,7 +6,7 @@ import {HiOutlineShieldCheck} from "react-icons/hi";
 
 export default function Action() {
     return (
-      <div className="action_section flex flex-row w-full items-center justify-center gap-4">
+      <div className="action_section flex flex-row flex-wrap w-full items-center justify-center gap-4">
         <div className="action_1">
           <div className="top">
             <div className="shade-1">

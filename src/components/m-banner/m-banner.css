@@ -35,13 +35,23 @@ span.line {
     width: 80%;
 }
 
-@media (max-width: 808px){
-    .sortcat,
-    .line{
+@media (max-width: 808px) {
+    .m-banner_section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .sortcat{
+        width: 100%;
+    }
+
+    .line {
         display: none;
     }
 
-    .banner{
+    .banner {
         min-width: 100%;
         margin-right: 20px;
     }
