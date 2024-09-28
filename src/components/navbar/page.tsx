@@ -14,9 +14,14 @@ import { HamburgerMenu } from "../hamburger/page";
 export const HomeNav = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen); // Toggle search state
   };
 
   const navItems = [
@@ -34,7 +39,7 @@ export const HomeNav = () => {
         </Link>
       </div>
       <div className="mobile_icon hidden  flex-row w-3/5  items-center justify-end gap-5">
-        <div className="search_icon flex">
+        <div className="search_icon flex" onClick={toggleSearch}>
           <div className="search flex flex-row relative items-center justify-evenly">
             <FaSearch className="nav-icon absolute right-1" />
           </div>
@@ -112,6 +117,18 @@ export const HomeNav = () => {
           <span>Logout</span>
         </div>
       </div>
+
+      {/* Search Dropdown */}
+      {isSearchOpen && (
+        <div className="search-dropdown">
+          <input
+            type="text"
+            placeholder="What are you looking for..."
+            className="search-input"
+          />
+          <ImCancelCircle className="cancel-icon" onClick={toggleSearch} />
+        </div>
+      )}
     </div>
   );
 };

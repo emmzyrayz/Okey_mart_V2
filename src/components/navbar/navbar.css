@@ -212,18 +212,18 @@
         display: none;
     }
 
-    .mobile_icon{
+    .mobile_icon {
         display: flex;
         width: 100%;
         position: relative;
 
         .search_icon,
-        .search{
+        .search {
             background: transparent;
         }
     }
 
-    
+
 
     /* Hamburger menu for mobile */
     .hamburger {
@@ -261,4 +261,37 @@
 .wh {
     width: 24px;
     height: 24px;
+}
+
+/* search dropdown */
+/* Search Dropdown */
+.search-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.search-input {
+    width: 90%;
+    padding: 10px;
+    font-size: var(--fs-16);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+.cancel-icon {
+    font-size: var(--fs-24);
+    color: var(--text1);
+    margin-left: 10px;
+    cursor: pointer;
 }

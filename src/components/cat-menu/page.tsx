@@ -10,6 +10,7 @@ export const SortCat: React.FC<SortCatProps> = ({className}) => {
   return (
     <div className={`sortcat_section ${className}`}>
       <div className="sortcat_container flex flex-col">
+        <h2 className="relative lg:hidden">Categories</h2>
         <span>
           <Link
             href="/"
