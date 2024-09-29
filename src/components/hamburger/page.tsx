@@ -3,7 +3,7 @@ import {useState} from "react";
 import {usePathname} from "next/navigation";
 import Link from "next/link";
 import './ham.css';
-import { FaRegHeart, FaSearch } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { FiBell, FiShoppingBag, FiUser } from "react-icons/fi";
 import { CiStar } from "react-icons/ci";
